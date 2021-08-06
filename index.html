@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="CSS/normalize.css">
   <title>Tip calculator app</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -15,7 +16,7 @@
   </style>
 </head>
 <body>
-
+<!-- 
   Bill
 
   Select Tip %
@@ -34,23 +35,56 @@
   Total
   / person
 
-  Reset
+  Reset -->
 
-  <main>
-    <div class="container">
+  <main >
 
-      <div>
+    <form action="#" >
+      <div class="container">
+        <div class="bill-container">
 
+          <div class="bill-Amount">
+            <label for="bill">Bill</label>
+            <input type="number" name="Amount" id="bill">  
+          </div>
+          <div>
+            <label for="Tip-percent">Select Tip %</label>
+          </div>
+  
+          <div class="button-container">
+            <input class="button" type="button" value="5">
+            <input class="button" type="button" value="10">
+            <input class="button" type="button" value="15">
+            <input class="button" type="button" value="25">
+            <input class="button" type="button" value="50">
+            <input class="button custom" type="text" placeholder="Custom">
+          </div>
+          
+          <div class="number-people">
+            <label for="people">Number of People</label>
+            <input type="number" id="people" min="1">
+          </div>  
+        
+        </div>
+  
+        <div class="result">
+  
+        
+          <label  for="tip-amount" id="Amount-person">Tip Amount
+            <span>&#47; person</span>
+          </label>
+          <input type="text" name="tip-amount" id="tip-amount" value="0.00">
+          <label for="total-Amount" class="total-per-person">
+            <span>Total</span>&#47;person
+          </label>
+          <input type="text" name="Total-per-person" id="total-Amount" value="0.00">
+          <input type="reset" value="RESET">
+          
+        </div>
       </div>
 
-      <div class="count">
-        <label  for="tip-amount"></label>
-        <span id="tip-amount">0.00</span>
-        <label for="total-person" class="total-per-person"><span>Total</span>/person</label>
-        <button type="reset">Reset</button>
-      </div>
-
-    </div>
+    </form>
+    
   </main>
   
   <footer class="footer-section">
