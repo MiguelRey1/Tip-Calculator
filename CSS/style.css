@@ -55,6 +55,12 @@ label {
     row-gap: 10px;
     
 }
+.bill-container label{
+    padding: 10px;
+    /* padding-bottom: 5px;
+    display: block;
+    margin-top: 25px; */
+}
 
 .button{
     width: 95px;
