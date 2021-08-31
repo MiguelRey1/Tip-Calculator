@@ -42,30 +42,41 @@
 
   <main >
 
+    <div class="logo-container">
+      <img src="images/logo.svg" alt="logo">
+    </div>
+    
     <form action="#" >
       <div class="container">
         <div class="bill-container">
 
           <div class="bill-Amount">
+            <img class="icon" src="images/icon-person.svg" alt="icon-person">
             <label for="bill">Bill</label>
-            <input class="input-bill-number" type="number" name="Amount" id="bill">  
+            <input class="input-bill-number" type="number" min="0" name="Amount" id="bill" placeholder="0">  
           </div>
           
             <label for="Tip-percent">Select Tip %</label>
           
   
           <div class="button-container">
-            <input class="button" type="button" value="5">
+            <a class="button">5%</a>
+            <a class="button">10%</a>
+            <a class="button">15%</a>
+            <a class="button">25%</a>
+            <a class="button">50%</a>
+            <!-- <input class="button" type="button" value="5">
             <input class="button" type="button" value="10">
             <input class="button" type="button" value="15">
             <input class="button" type="button" value="25">
-            <input class="button" type="button" value="50">
-            <input class="button custom" type="text" placeholder="Custom">
+            <input class="button" type="button" value="50"> -->
+            <input class="custom" type="text" placeholder="Custom" >
           </div>
           
           <div class="number-people">
+            <img class="icon" src="images/icon-dollar.svg" alt="icon-dollar">
             <label for="people">Number of People</label>
-            <input class="input-number-people" type="number" id="people" min="1">
+            <input class="input-number-people" type="number" id="people" min="1" placeholder="0">
           </div>  
         
         </div>
@@ -74,7 +85,7 @@
   
           <div class="tip-amount-content">
             <label  for="tip-amount" id="Amount-person">Tip Amount
-              <span> &#47; person</span>
+              <span>&#47; person</span>
             </label>
             <!-- <input class="total-amount" type="text" name="tip-amount" id="tip-amount" disabled value="0.00"> -->
             <a class="total-amount">0.00</a>
@@ -82,8 +93,8 @@
           
           
           <div class="total-amount-content">
-            <label for="total-Amount" class="total-per-person">
-              <span>Total</span> &#47; person
+            <label for="total-Amount" class="total-per-person">Total
+              <span>&#47; person</span>
             </label>
             <!-- <input class="total-amount" type="text" name="Total-per-person" id="total-Amount" disabled value="0.00"> -->
             <a class="total-amount">0.00</a>
@@ -98,12 +109,12 @@
     
   </main>
   
-  <footer class="footer-section">
+  <!-- <footer class="footer-section">
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="#">Miguel Reynoso</a>.
     </div>
-  </footer>
+  </footer> -->
   
 </body>
 </html>
