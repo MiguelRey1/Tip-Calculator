@@ -8,20 +8,6 @@ body {
 
 
 .container {
-    
-    /* box-sizing: border-box;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    column-gap: 15px;
-    row-gap: 15px;
-    width: 100vw;
-    background-color: #fff;
-    border: 2px solid red;
-    padding: 20px;
-    border-radius: 15px; */
-    
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
@@ -30,12 +16,11 @@ body {
     column-gap: 15px;
     row-gap: 15px;
     max-width: max-content;
-    margin: 0 auto;
+    margin: 0 auto 2.5rem;
     background-color: #fff;
     padding: 20px;
     border-radius: 15px;
-    
-    
+
 }
 
 .logo-container{
@@ -79,6 +64,13 @@ body {
     row-gap: 10px;
     
 }
+
+/* .button-container input{
+    font-weight: 700;
+}
+ */
+
+
 .button{
     width: 30%;
     padding: 10px 0;
@@ -89,11 +81,17 @@ body {
     color: #fff;
     border: none;
     border-radius: 5px;
-    
+    cursor: pointer;
 }
 
 .button:hover{
-    background-color:  hsl(185, 41%, 84%);
+    background-color:  hsl(172, 79%, 42%);
+    color:  hsl(183, 100%, 15%);
+}
+
+/* this class is for applying styles when the buttons are selected */
+.visited{
+    background-color: hsl(172, 79%, 42%);
     color:  hsl(183, 100%, 15%);
 }
 
@@ -108,6 +106,8 @@ body {
     background-color: hsl(189, 41%, 97%);
     font-weight: 700;
     color: #044;
+    outline-color: hsl(183, 99%, 26%);
+    cursor: pointer;
 }
 
 .bill-container label {
@@ -116,6 +116,7 @@ body {
     padding-bottom: 5px;
     padding-left: 5px;
     color: rgba(0 73 77 / 70%);
+    width: 54%;
 }
 
 .input-bill-number, 
@@ -130,7 +131,21 @@ body {
     font-size: 24px;
     font-weight: 700;
     color: #044;
+    outline-color: hsl(183, 99%, 26%);
+    cursor: pointer;
     
+}
+
+.warning{
+    outline-color: hsla(0, 66%, 50%,  82%);
+}
+
+.warning-text{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 44%;
+    color: hsla(0, 66%, 50%, 82%);
 }
 
 .icon {
@@ -199,11 +214,35 @@ body {
     font-family: monospace;
     font-size: 1.5em;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .button-reset:hover{
     background-color: #91edff;
     color: #044;
+}
+
+.footer-section{
+    box-sizing: border-box;
+    background: rgb(10 140 134 / 76%);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 4%;
+    padding: 7px 0;
+    text-align: center;
+}
+
+.attribution{
+    font-size: 1rem;
+    font-family: 'Asap', sans-serif;
+    font-weight: 600;
+    color: #0e1056;
+}
+
+.attribution a {
+    color: hsl(0deg 92% 28%);
+    text-decoration: none;
 }
 
     /* Mobile deign */
@@ -281,7 +320,7 @@ body {
         }
         
         .button:hover{
-            background-color:  hsl(185, 41%, 84%);
+            background-color:   hsl(172, 79%, 42%);
             color:  hsl(183, 100%, 15%);
         }
         
@@ -319,6 +358,14 @@ body {
             font-weight: 700;
             color: #044;
             
+        }
+
+        .warning-text{
+            position: absolute;
+            top: 5px;
+            right: 0;
+            width: 44%;
+            color: hsla(0, 66%, 50%, 82%);
         }
         
         .result{
@@ -468,9 +515,9 @@ body {
                 border-radius: 5px;
                 
             }
-            
+
             .button:hover{
-                background-color:  hsl(185, 41%, 84%);
+                background-color:   hsl(172, 79%, 42%);
                 color:  hsl(183, 100%, 15%);
             }
             
@@ -508,6 +555,14 @@ body {
                 font-weight: 700;
                 color: #044;
                 
+            }
+
+            .warning-text{
+                position: absolute;
+                top: 10px;
+                right: 0;
+                width: 44%;
+                color: hsla(0, 66%, 50%, 82%);
             }
             
             .result{
