@@ -222,17 +222,6 @@ body {
     color: #044;
 }
 
-.footer-section{
-    box-sizing: border-box;
-    background: rgb(10 140 134 / 76%);
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    height: 4%;
-    padding: 7px 0;
-    text-align: center;
-}
-
 .attribution{
     font-size: 1rem;
     font-family: 'Asap', sans-serif;
@@ -428,11 +417,6 @@ body {
             font-size: 1.5em;
             font-weight: bold;
         }
-        
-        .button-reset:hover{
-            background-color: #91edff;
-            color: #044;
-        }
     
 }
     
@@ -625,11 +609,6 @@ body {
                 font-family: monospace;
                 font-size: 1.5em;
                 font-weight: bold;
-            }
-            
-            .button-reset:hover{
-                background-color: #91edff;
-                color: #044;
             }
             
 }

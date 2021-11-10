@@ -58,48 +58,42 @@ buttons.addEventListener('click', (event)=>{
 
     switch (value) {
         case "5%":
-
+            btn5.classList.toggle("visited")
         for (const child of children) {
                 if (child.textContent !== value &&  child.classList.contains("visited")) {
                     child.classList.remove("visited")  
-                } else {
-                    btn5.classList.add("visited")
                 }
             }
         break;
         case "10%":
+            btn10.classList.toggle("visited")
             for (const child of children) {
                 if (child.textContent !== value &&  child.classList.contains("visited")) {
                     child.classList.remove("visited")
-                } else {
-                    btn10.classList.add("visited")
                 }
             }
         break;
         case "15%":
+            btn15.classList.toggle("visited")
             for (const child of children) {
                 if (child.textContent !== value &&  child.classList.contains("visited")) {
                     child.classList.remove("visited")
-                } else {
-                    btn15.classList.add("visited")
-                }
+                } 
             }
         break;
         case "25%":
+            btn25.classList.toggle("visited")
             for (const child of children) {
                 if (child.textContent !== value &&  child.classList.contains("visited")) {
                     child.classList.remove("visited")
-                } else {
-                    btn25.classList.add("visited")
                 }
             }
         break;
         case "50%":
+            btn50.classList.toggle("visited")
             for (const child of children) {
                 if (child.textContent !== value &&  child.classList.contains("visited")) {
                     child.classList.remove("visited")
-                } else {
-                    btn50.classList.add("visited")
                 }
             }
         break;
@@ -126,10 +120,11 @@ numberPeople.addEventListener('keyup', (event)=>{
         textWarning.setAttribute("class","warning-text");
         numberPeople.classList.add("warning");
         
-    } else if(buttonsValue == 0 ){
+    } else if(buttonsValue == 0 || buttonsValue == ""){
         textWarning.textContent = "";
         textWarning.removeAttribute('class');
         numberPeople.classList.remove('warning');
+        totalAmount.textContent = "0.00";
         totalPerPerson.textContent = (billValue / peopleNumber).toFixed(2);
 
     } else if(buttonsValue !== undefined && buttonsValue !=0 ){
